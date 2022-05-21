@@ -1,0 +1,11 @@
+services:
+    frontend:
+      image: myonline24h/starter-front
+      build: frontend
+      ports:
+        - 80:80
+      depends_on:
+        - backend
+    backend:
+      image: myonline24h/starter-back
+      build: backend
